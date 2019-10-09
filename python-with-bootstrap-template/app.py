@@ -6,6 +6,10 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.template.html')
+    
+@app.route('/blog')
+def blog():
+    return render_template('blog.template.html')
 
 # "magic code" -- boilerplate
 if __name__ == '__main__':
