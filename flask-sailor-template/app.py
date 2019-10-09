@@ -6,6 +6,14 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.template.html')
+    
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.template.html')
+    
+@app.route('/typography')
+def typography():
+    return render_template('typography.template.html')
 
 # "magic code" -- boilerplate
 if __name__ == '__main__':
