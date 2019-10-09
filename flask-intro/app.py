@@ -7,6 +7,10 @@ app = Flask(__name__)
 def hello():
     name = "Diyanah"
     return render_template('index.template.html', first_name = name)
+    
+@app.route('/about')
+def about():
+    return render_template('about.template.html')
 
 # "magic code" -- boilerplate
 if __name__ == '__main__':
