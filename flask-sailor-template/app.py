@@ -14,6 +14,10 @@ def portfolio():
 @app.route('/typography')
 def typography():
     return render_template('typography.template.html')
+    
+@app.route('/blog-leftsidebar')
+def blogLeftsidebar():
+    return render_template('blog-leftsidebar.template.html')
 
 # "magic code" -- boilerplate
 if __name__ == '__main__':
